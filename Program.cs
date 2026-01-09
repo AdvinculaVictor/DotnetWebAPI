@@ -9,14 +9,14 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.MapOpenApi();
         // Enable middleware to serve generated Swagger as a JSON endpoint
     app.UseSwagger();
     // Enable middleware to serve Swagger UI
     app.UseSwaggerUI();
-}
+// }
 
 app.UseHttpsRedirection();
 
